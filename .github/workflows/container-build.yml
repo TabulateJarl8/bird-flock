@@ -2,7 +2,7 @@ name: Build Birds App
 env:
   FE_IMAGE_NAME: birds-app-front-end
   BE_IMAGE_NAME: birds-app-back-end
-  REGISTRY: ghcr.io/${{ github.actor }}
+  REGISTRY: ghcr.io/tabulatejarl8
 on:
   push:
     paths-ignore:
@@ -191,13 +191,13 @@ jobs:
         with:
           image: ${{ env.FE_IMAGE_NAME }}
           tags: latest ${{ github.sha }}
-          registry: ${{ env.REGISTRY }}
+          registry: ghcr.io/tabulatejarl8
       - name: Push back-end to GitHub Container Repository
         uses: redhat-actions/push-to-registry@v2
         with:
           image: ${{ env.BE_IMAGE_NAME }}
           tags: latest ${{ github.sha }}
-          registry: ${{ env.REGISTRY }}
+          registry: ghcr.io/tabulatejarl8
       - name: Set up Python 3.x
         uses: actions/setup-python@v5
         with:
