@@ -15,7 +15,7 @@ spec:
         app: birds-app-back-end-TabulateJarl8
     spec:
       containers:
-        - image: 'ghcr.io/TabulateJarl8/birds-app-back-end:fab3538e685a513fda11b882f4c4b79c030a0abb'
+        - image: 'ghcr.io/TabulateJarl8/birds-app-back-end:5feffc67f80449a669a61f29a7fb0b6e7ff156cb'
           name: birds-back-front-end
           ports:
             - containerPort: 8080
