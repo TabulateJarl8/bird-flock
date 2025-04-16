@@ -8,14 +8,14 @@ spec:
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: birds-app-back-end-ripleymj
+      app: birds-app-back-end-TabulateJarl8
   template:
     metadata:
       labels:
-        app: birds-app-back-end-ripleymj
+        app: birds-app-back-end-TabulateJarl8
     spec:
       containers:
-        - image: 'ghcr.io/ripleymj/birds-app-back-end:f8690a1afd43a2e3ff3e544f5fe24941fbec8c88'
+        - image: 'ghcr.io/TabulateJarl8/birds-app-back-end:fab3538e685a513fda11b882f4c4b79c030a0abb'
           name: birds-back-front-end
           ports:
             - containerPort: 8080
