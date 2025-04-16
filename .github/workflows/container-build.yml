@@ -170,7 +170,7 @@ jobs:
       - name: Log in to the GitHub Container registry
         uses: redhat-actions/podman-login@v1
         with:
-          registry: ${{ env.REGISTRY }}
+          registry: ghcr.io/tabulatejarl8
           username: tabulatejarl8
           password: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/download-artifact@v4
